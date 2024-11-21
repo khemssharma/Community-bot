@@ -19,11 +19,11 @@ Please note that GitHub has rate limits on API calls. The bot will respect these
 ## How to Use
 
 ### Clone the repository:
-git clone https://github.com/yourusername/community-bot.git
+git clone https://github.com/yourusername/community-bot.git <br>
 cd community-bot
 
 ### Set Up the Bot: Create a .env file with your GitHub username and token:
-GITHUB_USERNAME=your_github_username
+GITHUB_USERNAME=your_github_username     <br>
 GITHUB_TOKEN=your_github_token
 
 ### Install Dependencies: Install the necessary packages (axios and dotenv):
@@ -33,7 +33,7 @@ npm install axios dotenv
 node followback.js
 
 ### Running Automatically (via GitHub Actions)
-Set up your GitHub Secrets for GITHUB_USERNAME and GITHUB_TOKEN.
+Set up your GitHub Secrets for GITHUB_USERNAME and GITHUB_TOKEN.     <br>
 The bot will run automatically based on the schedule defined in .github/workflows/follow-back.yml.
 
 ## License
