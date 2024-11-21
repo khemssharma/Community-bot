@@ -4,7 +4,7 @@ const axios = require('axios');
 
 const GITHUB_USERNAME = process.env.GITHUB_USERNAME;
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
-const TARGET_USERNAME = 'shahradelahi'; // Replace with the username whose following list you want to follow
+const TARGET_USERNAME = 'DeiseFreire'; // Replace with the username whose following list you want to follow
 
 const api = axios.create({
   baseURL: 'https://api.github.com',
