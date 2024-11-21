@@ -3,7 +3,7 @@ const axios = require('axios');
 
 const GITHUB_USERNAME = process.env.GITHUB_USERNAME;
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
-const EXCLUDED_USERS = ['prabhatojha']; // Add usernames you don't want to unfollow here
+const EXCLUDED_USERS = ['prabhatojha', 'KumarGourav07']; // Add usernames you don't want to unfollow here
 
 const api = axios.create({
   baseURL: 'https://api.github.com',
