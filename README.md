@@ -10,11 +10,8 @@ Unfollow.js unfollows all the users automatically who don't follow you back. �
 ### Scheduled Runs: 
 All the followers will get follow-back and non-reciprocal accounts will be unfollowed <strong>within an hour automatically<strong>.
 
-## Important Notes 
-### Respect:
-The bot follows and unfollows based on a simple rule: if you follow me, I’ll follow you back; if you unfollow me, I’ll unfollow you. It’s all automated, so please be mindful of this automatic process.
 ### GitHub’s Rate Limits: 
-Please note that GitHub has rate limits on API calls. The bot will respect these limits, but excessive use may temporarily block requests.
+ Please note that GitHub has rate limits on API calls. The bot will respect these limits, but excessive use may temporarily block requests.
 
 ## How to Use
 
@@ -38,11 +35,12 @@ npm install axios dotenv
 ### Run the Bot: Run the bot to follow or unfollow users:
 ```
 node followback.js
+node unfollow.js
 ```
 
 ### Running Automatically (via GitHub Actions)
 
-Set up your GitHub Secrets for GITHUB_USERNAME and GITHUB_TOKEN.     
+Set up your GitHub Secrets for USERNAME and TOKEN.     
 The bot will run automatically every hour in .github/workflows/follow-back.yml.
 
 ## License
