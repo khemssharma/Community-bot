@@ -1,6 +1,6 @@
 # Community Bot
 ## Overview
-Welcome to the Community Bot repository! This bot automates the process of following back users who follow you and unfollowing those who unfollow you on GitHub.
+Welcome! This repository is a collection of automatation scripts. More run-on-cloud automation scripts are coming soon! 😊
 
 ## Key Features
 ### Automatic Follow Back: 
@@ -8,10 +8,12 @@ You can follow-back all the users automatically just by running the script follo
 ### Automatic Unfollow: 
 Unfollow.js unfollows all the users automatically who don't follow you back. 😁
 ### Scheduled Runs: 
-All the followers will get follow-back and non-reciprocal accounts will be unfollowed <strong>within an hour automatically<strong>.
+<strong>Every Two Hours Automatically<strong>, all the followers will get follow-back and non-reciprocal accounts will be unfollowed.
 
 ### GitHub’s Rate Limits: 
- Please note that GitHub has rate limits on API calls. The bot will respect these limits, but excessive use may temporarily block requests.
+ Please note that GitHub has limit of 5000 API Calls per Hour. <br>
+ Every "Follow" is considered a Call. <br>
+ After this limit, a Call will simply return an error.
 
 ## How to Use
 
@@ -39,10 +41,9 @@ node unfollow.js
 ```
 
 ### Running Automatically (via GitHub Actions)
+Set up your GitHub Secrets for USERNAME and TOKEN.  <br>   
+The bot will run automatically every two hours in .github/workflows/follow-back.yml and other.
 
-Set up your GitHub Secrets for USERNAME and TOKEN.     
-The bot will run automatically every hour in .github/workflows/follow-back.yml.
 
 ## License
-
 This repository is licensed under the MIT License. See LICENSE for more details.
