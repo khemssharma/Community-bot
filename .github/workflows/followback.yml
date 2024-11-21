@@ -29,6 +29,6 @@ jobs:
       # Step 4: Run the Follow Back Script
       - name: Run Follow Back Script
         env:
-          GITHUB_USERNAME: ${{ secrets.GITHUB_USERNAME }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USERNAME: ${{ secrets.USERNAME }}
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
         run: node followback.js
