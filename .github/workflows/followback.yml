@@ -2,8 +2,8 @@ name: Automate Follow Back
 
 on:
   schedule:
-    # Run every 2 hours 
-    - cron: "0 0/2 * * *"
+    # Run every 10 minutes (Temporarily) 
+    - cron: "0/10 * * * *"
   workflow_dispatch:  # Allows manual runs via GitHub Actions UI
 
 jobs:

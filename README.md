@@ -8,11 +8,11 @@ You can follow-back all the users automatically just by running the script follo
 ### Automatic Unfollow: 
 Unfollow.js unfollows all the users automatically who don't follow you back. 😁
 ### Scheduled Runs: 
-<strong>Every Two Hours Automatically<strong>, all the followers will get follow-back and non-reciprocal accounts will be unfollowed.
+<strong>At scheduled runs<strong>, all the followers will get follow-back and non-reciprocal accounts will be unfollowed.
 
 ### GitHub’s Rate Limits: 
  Please note that GitHub has limit of 5000 API Calls per Hour. <br>
- Every "Follow" is considered a Call. <br>
+ Also you cannot follow 100+ (approx.) accounts in succession via API (unless you pay). <br> 
  After this limit, a Call will simply return an error.
 
 ## How to Use
@@ -42,7 +42,7 @@ node unfollow.js
 
 ### Running Automatically (via GitHub Actions)
 Set up your GitHub Secrets for USERNAME and TOKEN.  <br>   
-The bot will run automatically every two hours in .github/workflows/follow-back.yml and other.
+The bot will run automatically at scheduled times in .github/workflows/follow-back.yml and other.
 
 
 ## License

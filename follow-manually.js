@@ -1,4 +1,5 @@
 // This script is meant to be run manually time to time
+// also be aware that you cannot follow more than 100 users via API
 require('dotenv').config();
 const axios = require('axios');
 
