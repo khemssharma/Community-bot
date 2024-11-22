@@ -8,14 +8,14 @@ You can follow-back all the users automatically just by running the script follo
 ### Automatic Unfollow: 
 Unfollow.js unfollows all the users automatically who don't follow you back. 😁
 ### Scheduled Runs: 
-<strong>At scheduled runs<strong>, all the followers will get follow-back and non-reciprocal accounts will be unfollowed.
+<strong>At scheduled runs</strong>, all the followers will get follow-back and non-reciprocal accounts will be unfollowed.
 
 ### GitHub’s Rate Limits: 
  Please note that GitHub has limit of 5000 API Calls per Hour. <br>
  Also you cannot follow 100+ (approx.) accounts in succession via API (unless you pay). <br> 
  After this limit, a Call will simply return an error.
 
-## How to Use
+## How to Use ##
 
 ### Clone the repository:
 ```
