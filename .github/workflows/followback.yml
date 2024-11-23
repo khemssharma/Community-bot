@@ -2,8 +2,8 @@ name: Automate Follow Back
 
 on:
   schedule:
-    # Run every 10 minutes (Temporarily) 
-    - cron: "0/5 * * * *"
+    # Run every 5 minutes (Polling can't reoccur any faster) 
+    - cron: "* * * * *"
   workflow_dispatch:  # Allows manual runs via GitHub Actions UI
 
 jobs:
