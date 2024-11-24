@@ -1,4 +1,5 @@
-name: Follow by Username's following list
+name: Follow by following list of any user
+#TODO: INTRODUCE CRON JOB. (Make All new) 
 
 on:
   workflow_dispatch:  # Allows you to run the workflow manually via GitHub Actions
