@@ -24,7 +24,7 @@ jobs:
           npm install axios dotenv
 
       # Step 4: Run the script
-      - name: Run Follow Back or Unfollow Script
+      - name: Follow by Username
         env:
           GITHUB_USERNAME: ${{ secrets.USERNAME }}
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
