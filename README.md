@@ -12,7 +12,7 @@ Unfollow.js unfollows all the users automatically who don't follow you back. ðŸ˜
 
 ### GitHubâ€™s Rate Limits: 
  Please note that GitHub has limit of 5000 API Calls per Hour. <br>
- Also you cannot follow 100+ (approx.) accounts in succession via API (unless you pay). <br> 
+ Also you can not follow 150+ accounts in succession via API (unless you pay). <br> 
  After this limit, a Call will simply return an error.
 
 ## How to Use ##
