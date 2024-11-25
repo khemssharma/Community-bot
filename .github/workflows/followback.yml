@@ -1,9 +1,9 @@
-name: Automate Follow Back
+name: Automate Follow Back Most Recent
 
 on:
   schedule:
     # Run every 5 minutes (Polling can't reoccur any faster) 
-    - cron: "* * * * *"
+    - cron: "0/5 * * * *"
   workflow_dispatch:  # Allows manual runs via GitHub Actions UI
 
 jobs:
