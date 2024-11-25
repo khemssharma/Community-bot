@@ -26,7 +26,7 @@ jobs:
         run: |
           npm install axios dotenv
 
-      # Step 4: Run the Unfollow Script
+      # Step 4: Run Automate follow following list of any user Script
       - name: Run Follow by following list 
         env:
           GITHUB_USERNAME: ${{ secrets.USERNAME }}
