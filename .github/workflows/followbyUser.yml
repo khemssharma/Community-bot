@@ -1,4 +1,4 @@
-name: Follow by following list of any user
+name: Automate follow following list of any user
 
 on:
   schedule:
