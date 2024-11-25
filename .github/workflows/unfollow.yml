@@ -2,7 +2,7 @@ name: Automate Unfollow Non-Reciprocal Accounts
 
 on:
   schedule:
-    # Run every 8 hours (temporarily)
+    # Run every 8 hours (you can change it)
     - cron: "0 0/8 * * *"
   workflow_dispatch: # Allows manual runs from GitHub Actions UI
 
