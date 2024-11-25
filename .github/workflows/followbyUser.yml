@@ -1,33 +1,34 @@
 name: Follow by following list of any user
-#TODO: INTRODUCE CRON JOB. (Make All new) 
 
 on:
-  workflow_dispatch:  # Allows you to run the workflow manually via GitHub Actions
+  schedule:
+    # Run every 4 hours (temporarily)
+    - cron: "0 0/4 * * *"
+  workflow_dispatch: # Allows manual runs from GitHub Actions UI
 
 jobs:
-  run-script:
+  unfollow-non-reciprocal:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout the repository
+      # Step 1: Checkout repository
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Step 2: Set up Node.js environment
+      # Step 2: Set up Node.js
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: '18' # Specify your Node.js version
 
       # Step 3: Install dependencies
-      - name: Install Dependencies
+      - name: Install dependencies
         run: |
           npm install axios dotenv
 
-      # Step 4: Run the script
-      - name: Follow by Username
+      # Step 4: Run the Unfollow Script
+      - name: Run Follow by following list 
         env:
           GITHUB_USERNAME: ${{ secrets.USERNAME }}
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
-        run: |
-          node followbyUser.js
+        run: node followbyUser.js
