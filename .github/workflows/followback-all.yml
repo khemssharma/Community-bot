@@ -24,7 +24,7 @@ jobs:
           npm install axios dotenv
 
       # Step 4: Run the script
-      - name: Run Un-Follow all non-reciprocal
+      - name: Run Follow-back All Followers
         env:
           GITHUB_USERNAME: ${{ secrets.USERNAME }}
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
