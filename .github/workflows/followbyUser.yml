@@ -1,34 +1,32 @@
-name: Automate follow following list of any user
+name: One-tap Follow All in Following List
 
 on:
-  schedule:
-    # Run every 4 hours (temporarily)
-    - cron: "0 0/4 * * *"
-  workflow_dispatch: # Allows manual runs from GitHub Actions UI
+  workflow_dispatch: # Allows you to run the workflow manually via GitHub Actions
 
 jobs:
-  unfollow-non-reciprocal:
+  run-script:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout repository
+      # Step 1: Checkout the repository
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Step 2: Set up Node.js
+      # Step 2: Set up Node.js environment
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18' # Specify your Node.js version
+          node-version: "18"
 
       # Step 3: Install dependencies
-      - name: Install dependencies
+      - name: Install Dependencies
         run: |
           npm install axios dotenv
 
-      # Step 4: Run Automate follow following list of any user Script
-      - name: Run Follow by following list 
+      # Step 4: Run the script
+      - name: Run Follow All in Following List
         env:
           GITHUB_USERNAME: ${{ secrets.USERNAME }}
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
-        run: node followbyUser.js
+        run: |
+          node followbyUser.js
