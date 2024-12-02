@@ -33,12 +33,12 @@ This script demonstrates the basics of logging into Instagram, navigating a user
 
 2. **Install Dependencies**: Run the following command to install Puppeteer:
     ```
-    npm install puppeteer
+    npm install puppeteer dotenv
     ```
 
 3. **Create a .env file like following**: 
     ```
-    your_username = 
+    your_username = YOUR_USERNAME
     your_password = 
     target_user = 
     ```
