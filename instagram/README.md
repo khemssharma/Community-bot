@@ -44,7 +44,7 @@ This script demonstrates the basics of logging into Instagram, navigating a user
     ```
 4. **Run the Script**: In your terminal, run:
     ```
-    node index.js
+    node followByUser.js
     ```
 
 This will launch the script, open a browser window, and start automating the following process. Don’t forget to have fun while watching your little bot in action! 🎉
