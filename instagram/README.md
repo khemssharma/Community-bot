@@ -26,13 +26,14 @@ This script demonstrates the basics of logging into Instagram, navigating a user
 
 1. **Clone the Repo** (or create your own folder):
    ```
-    git clone https://github.com/khemssharma/instagram-automation.git
-    cd instagram-automation
+    git clone https://github.com/khemssharma/Community-bot.git1
+    cd Community-bot
+    cd instagram
    ```
 
 2. **Install Dependencies**: Run the following command to install Puppeteer:
     ```
-        npm install puppeteer
+    npm install puppeteer
     ```
 
 3. **Create a .env file like following**: 
