@@ -2,8 +2,6 @@
 
 Hey there, awesome devs! 👋
 
-If you've ever wondered how to interact with Instagram using code, you've come to the right place. Below, I'll walk you through an example using [Puppeteer](https://pptr.dev/), a Node.js library that provides a high-level API to control Chrome or Chromium browsers.
-
 This example shows how you can automate the process of following users on Instagram. It's a fun way to learn how to use Puppeteer and play with browser automation.
 
 But just to make things clear right off the bat: while this is a neat demo, I **personally** don't endorse automating browser actions like this for real use. Instagram has a system in place to prevent automated behavior, and overuse of scripts like this can lead to some *not-so-fun* consequences (like getting your account flagged). So use responsibly! 🚫
@@ -28,7 +26,7 @@ This script demonstrates the basics of logging into Instagram, navigating a user
 
 1. **Clone the Repo** (or create your own folder):
    ```
-    git clone https://github.com/yourgithubprofile/instagram-automation.git
+    git clone https://github.com/khemssharma/instagram-automation.git
     cd instagram-automation
    ```
 
@@ -37,11 +35,11 @@ This script demonstrates the basics of logging into Instagram, navigating a user
         npm install puppeteer
     ```
 
-3. **Set Up Your Script**: In the index.js file, update these lines with your own credentials:
+3. **Create a .env file like following**: 
     ```
-    await page.type('input[name="username"]', 'your_username');  // Replace with your Instagram username
-    await page.type('input[name="password"]', 'your_password');  // Replace with your Instagram password
-    await page.goto('https://www.instagram.com/target_user/following/'); // Replace with the username whose followers you want to follow
+    your_username = 
+    your_password = 
+    target_user = 
     ```
 4. **Run the Script**: In your terminal, run:
     ```
