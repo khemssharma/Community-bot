@@ -26,7 +26,7 @@ This script demonstrates the basics of logging into Instagram, navigating a user
 
 1. **Clone the Repo** (or create your own folder):
    ```
-    git clone https://github.com/khemssharma/Community-bot.git1
+    git clone https://github.com/khemssharma/Community-bot.git
     cd Community-bot
     cd instagram
    ```
