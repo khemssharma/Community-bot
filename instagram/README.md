@@ -35,7 +35,6 @@ This script demonstrates the basics of logging into Instagram, navigating a user
 2. **Install Dependencies**: Run the following command to install Puppeteer:
     ```
         npm install puppeteer
-        Set Up Your Script: In the index.js file, update these lines with your own credentials:
     ```
 
 3. **Set Up Your Script**: In the index.js file, update these lines with your own credentials:
