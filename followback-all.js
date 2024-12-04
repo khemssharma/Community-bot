@@ -27,6 +27,9 @@ const fetchPaginatedData = async (url) => {
   return results;
 };
 
+// Function to introduce a delay
+const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
 (async () => {
   try {
     // Fetch all followers with pagination
@@ -42,11 +45,12 @@ const fetchPaginatedData = async (url) => {
 
     console.log(`Users to follow back: ${notFollowingBack.join(', ')}`);
 
-    // Follow back users
+    // Follow back users with delay
     for (const user of notFollowingBack) {
       console.log(`Following ${user}...`);
       await api.put(`/user/following/${user}`);
       console.log(`Followed ${user}`);
+      await delay(1500); // 1.5-second timeout between requests
     }
 
     console.log('Followed back all users!');
