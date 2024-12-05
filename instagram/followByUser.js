@@ -39,8 +39,15 @@ async function viewProfile(page) {
 async function followUsers() {
   const browser = await puppeteer.launch({
     headless: true, // Ensure the browser is launched in headless mode
-    args: ['--no-sandbox', '--disable-setuid-sandbox'] // Add necessary flags for CI environments
+    args: [
+      '--no-sandbox',
+      '--disable-setuid-sandbox',
+      '--disable-gpu', // Disable GPU to improve performance in CI environments
+      '--window-size=1280x1024', // Set a window size for the headless browser
+      '--remote-debugging-port=9222' // Optional: useful for debugging if needed
+    ]
   });
+
   const page = await browser.newPage();
 
   // Go to Instagram login page
