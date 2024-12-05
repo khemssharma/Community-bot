@@ -38,7 +38,7 @@ async function viewProfile(page) {
 
 async function followUsers() {
   const browser = await puppeteer.launch({
-    headless: true, // Ensure the browser is launched in headless mode
+    headless: false, // Set to false to run in non-headless mode (you'll see the browser)
     args: [
       '--no-sandbox',
       '--disable-setuid-sandbox',
@@ -53,17 +53,14 @@ async function followUsers() {
   // Go to Instagram login page
   await page.goto('https://www.instagram.com/accounts/login/');
 
-  // Wait for the username field to be available
-  await page.waitForSelector('input[name="username"]', { visible: true });
-
   // Log in with your credentials
-  await page.type('input[name="username"]', your_username);
-  await page.type('input[name="password"]', your_password);
+  await page.type('input[name="username"]', your_username);  
+  await page.type('input[name="password"]', your_password); 
   await page.click('button[type="submit"]');
   await page.waitForNavigation();
 
   // Navigate to the following page of a specific user
-  await page.goto(`https://www.instagram.com/${target_user}/following/`);
+  await page.goto(`https://www.instagram.com/${target_user}/following/`); 
 
   // Wait for the modal to open
   await page.waitForSelector('div[role="dialog"]');
