@@ -7,7 +7,7 @@ Welcome! This repository is a collection of Automatation Scripts. More run-on-cl
 
 ### Automatic Follow Back: 
 You can follow-back all the users automatically just by running the script followback-all.js 😊
-### Automatic Unfollow: 
+### Automatic Unfollow Non-reciprocal Accounts: 
 You can unfollow all the users automatically who don't follow you back just by running the script unfollow.js 😁 <br>
 If they unfollow you; you be like: It's sad to see you go 🥹 I won't Spam you either.
 ### Automatically Follow All the users from the Following List of another user :
