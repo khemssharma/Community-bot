@@ -26,8 +26,8 @@ jobs:
 
     - name: Install dependencies
       run: |
-        npm ci  # Clean install of dependencies
-        npm install puppeteer # Ensure puppeteer is installed
+        npm install # Install dependencies
+        npm install puppeteer # Ensure Puppeteer is installed
 
     - name: Run Puppeteer Script
       run: node instagram/followByUser.js
