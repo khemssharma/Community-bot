@@ -15,7 +15,7 @@ Some of the users in a following list of other users might be real gems 💎🤗
 
 ### Scheduled Runs: 
 If you're so concerned about others unfollowing you; You can set a sheduled run like this: <br> 
-Actions > Automate Unfollow Non-Reciprocal Accounts > Run workflow 
+Actions > Automate Unfollow Non-Reciprocal Accounts > Run workflow<br>
 The job is currently set to occur every <strong>8 Hours</strong>, but you can change it in unfollow.yml.
 
 ### GitHub’s Rate Limits: 
