@@ -21,7 +21,7 @@ The job is currently set to occur every <strong>8 Hours</strong>, but you can ch
 ### GitHub’s Rate Limits: 
  GitHub API has a limit of 5000 API Calls per Hour. <br> 
  After this limit, a Call will simply return an error. <br>
- Changes will be postponed for some time after crossing a Secondary Limit.
+ After crossing a Secondary Limit you will only be able to follow others after a few hours.
 
 ## How to Use ##
 
@@ -52,7 +52,8 @@ node followbyUser.js
 
 ### Running Automatically (via GitHub Actions)
 Set up your GitHub Secrets for USERNAME, TOKEN and TARGET_USERNAME.  <br>   
-The bot will run automatically at scheduled times in .github/workflows/unfollow.yml
+Run/Enable workflows in Actions (on navigation bar) <br>
+.github/workflows/unfollow.yml will run automatically at scheduled times when enabled. 
 
 ## License
 This repository is licensed under the MIT License. See LICENSE for more details.
