@@ -1,0 +1,31 @@
+name: Run Puppeteer Script
+
+on:
+  workflow_dispatch: # Allows manual triggering
+  schedule:
+    - cron: '0 2 * * *' # Runs daily at 2 AM UTC (adjust as needed)
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    env:
+      # Define sensitive data as environment variables
+      your_username: ${{ secrets.YOUR_USERNAME }}
+      your_password: ${{ secrets.YOUR_PASSWORD }}
+      target_user: ${{ secrets.TARGET_USER }}
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Run Puppeteer Script
+      run: node node instagram/followByUser.js
