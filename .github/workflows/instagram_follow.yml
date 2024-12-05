@@ -28,4 +28,4 @@ jobs:
       run: npm install
 
     - name: Run Puppeteer Script
-      run: node node instagram/followByUser.js
+      run: node instagram/followByUser.js
