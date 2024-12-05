@@ -16,7 +16,7 @@ Some of the users in a following list of other users might be real gems 💎🤗
 ### Scheduled Runs: 
 If you're so concerned about others unfollowing you; You can set a sheduled run like this: <br> 
 Actions > Automate Unfollow Non-Reciprocal Accounts > Run workflow 
-The job is currently set to occur every <strong>8 Hours</strong> but you can change it in unfollow.yml.
+The job is currently set to occur every <strong>8 Hours</strong>, but you can change it in unfollow.yml.
 
 ### GitHub’s Rate Limits: 
  GitHub API has a limit of 5000 API Calls per Hour. <br> 
@@ -51,7 +51,7 @@ node followbyUser.js
 ```
 
 ### Running Automatically (via GitHub Actions)
-Set up your GitHub Secrets for USERNAME and TOKEN.  <br>   
+Set up your GitHub Secrets for USERNAME, TOKEN and TARGET_USERNAME.  <br>   
 The bot will run automatically at scheduled times in .github/workflows/unfollow.yml
 
 ## License
