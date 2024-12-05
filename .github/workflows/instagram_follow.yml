@@ -13,7 +13,7 @@ jobs:
       # Define sensitive data as environment variables
       your_username: ${{ secrets.YOUR_USERNAME }}
       your_password: ${{ secrets.YOUR_PASSWORD }}
-      target_user: ${{ secrets.TARGET_USER }}
+      target_user: ${{ secrets.USER }}
 
     steps:
     - name: Checkout repository
