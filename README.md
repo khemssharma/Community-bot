@@ -51,8 +51,8 @@ node followbyUser.js
 ```
 
 ### Running Automatically (via GitHub Actions)
-Set up your GitHub Secrets for USERNAME, TOKEN and TARGET_USERNAME.  <br>   
-in Settings > Secrets & Variable > Actions
+Set up your GitHub Secrets for USERNAME, TOKEN and TARGET_USERNAME.   
+in Settings > Secrets & Variable > Actions<br>  
 Run/Enable workflows in Actions (on navigation bar) <br>
 .github/workflows/unfollow.yml will run automatically at scheduled times when enabled. 
 
