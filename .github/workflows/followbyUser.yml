@@ -28,5 +28,6 @@ jobs:
         env:
           GITHUB_USERNAME: ${{ secrets.USERNAME }}
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
+          TARGET_USERNAME: ${{ secrets.TARGET_USERNAME }}
         run: |
           node followbyUser.js

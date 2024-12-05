@@ -33,8 +33,9 @@ cd community-bot
 
 ### Create a .env file with your GitHub username and token:
 ```
-GITHUB_USERNAME=your_github_username     
-GITHUB_TOKEN=your_github_token
+GITHUB_USERNAME = your_github_username     
+GITHUB_TOKEN = your_github_token
+TARGET_USERNAME = targeted_username_for_followbyUser
 ```
 
 ### Install the necessary packages (axios and dotenv):
