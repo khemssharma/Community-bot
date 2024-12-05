@@ -13,7 +13,7 @@ jobs:
       # Define sensitive data as environment variables
       your_username: ${{ secrets.YOUR_USERNAME }}
       your_password: ${{ secrets.YOUR_PASSWORD }}
-      target_user: ${{ secrets.USER }}
+      target_user: ${{ secrets.TARGET_USER }}
 
     steps:
     - name: Checkout repository
@@ -25,7 +25,9 @@ jobs:
         node-version: '18'
 
     - name: Install dependencies
-      run: npm install
+      run: |
+        npm ci  # Clean install of dependencies
+        npm install puppeteer # Ensure puppeteer is installed
 
     - name: Run Puppeteer Script
       run: node instagram/followByUser.js
