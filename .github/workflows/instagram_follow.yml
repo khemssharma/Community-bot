@@ -26,6 +26,8 @@ jobs:
 
     - name: Install dependencies
       run: |
+        sudo apt-get update
+        sudo apt-get install -y libgbm-dev # Install required dependencies for Chromium
         npm install # Install dependencies
         npm install puppeteer # Ensure Puppeteer is installed
 

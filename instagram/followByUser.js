@@ -37,7 +37,10 @@ async function viewProfile(page) {
 }
 
 async function followUsers() {
-  const browser = await puppeteer.launch({ headless: false });
+  const browser = await puppeteer.launch({
+    headless: true, // Ensure the browser is launched in headless mode
+    args: ['--no-sandbox', '--disable-setuid-sandbox'] // Add necessary flags for CI environments
+  });
   const page = await browser.newPage();
 
   // Go to Instagram login page
