@@ -54,13 +54,13 @@ async function followUsers() {
   await page.goto('https://www.instagram.com/accounts/login/');
 
   // Log in with your credentials
-  await page.type('input[name="username"]', your_username);  
-  await page.type('input[name="password"]', your_password); 
+  await page.type('input[name="username"]', your_username);
+  await page.type('input[name="password"]', your_password);
   await page.click('button[type="submit"]');
   await page.waitForNavigation();
 
   // Navigate to the following page of a specific user
-  await page.goto(`https://www.instagram.com/${target_user}/following/`); 
+  await page.goto(`https://www.instagram.com/${target_user}/following/`);
 
   // Wait for the modal to open
   await page.waitForSelector('div[role="dialog"]');
