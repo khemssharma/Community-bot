@@ -53,6 +53,9 @@ async function followUsers() {
   // Go to Instagram login page
   await page.goto('https://www.instagram.com/accounts/login/');
 
+  // Wait for the username field to be available
+  await page.waitForSelector('input[name="username"]', { visible: true });
+
   // Log in with your credentials
   await page.type('input[name="username"]', your_username);
   await page.type('input[name="password"]', your_password);
